@@ -1,0 +1,66 @@
+.top_nav{
+  background: linear-gradient(to right, #00ccff, #00ccff 50%, #000, #000 0.1%);
+  color: #fff;
+}
+.nav_contact a:hover{
+  background: #000;
+}
+.nav_link a:hover{
+  background: #00ccff;
+}
+.nav_contact{
+  background: #00ccff;
+  display: flex;
+  height: 35px;
+  align-items:center;
+  justify-content: space-between;
+}
+.nav_link{
+  display: flex;
+  height: 35px;
+  display: flex;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+}
+.nav_link .lang{
+  margin-left: auto;
+}
+.nav_contact li, .nav_link li{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+  
+}
+
+.nav_contact li a, .nav_link li a{
+  color: inherit;
+  height: 35px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+}
+
+@media screen and (min-width: 600px){
+  .nav_container{
+  background: #00ccff;
+  height: 35px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 912px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_link li:first-child{
+  background: #0000;
+}
+.nav_link::before{
+  content: "";
+  display: inline-block;
+  border-right: solid 35px transparent;
+  border-bottom: solid 35px;
+  
+}
+}
